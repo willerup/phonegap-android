@@ -58,13 +58,13 @@ public class ExifHelper {
      * Reads all the EXIF data from the input file.
      */
     public void readExifData() {
-        this.aperature = inFile.getAttribute(ExifInterface.TAG_APERTURE);
+//        this.aperature = inFile.getAttribute(ExifInterface.TAG_APERTURE);
         this.datetime = inFile.getAttribute(ExifInterface.TAG_DATETIME);
-        this.exposureTime = inFile.getAttribute(ExifInterface.TAG_EXPOSURE_TIME);
+  //      this.exposureTime = inFile.getAttribute(ExifInterface.TAG_EXPOSURE_TIME);
         this.flash = inFile.getAttribute(ExifInterface.TAG_FLASH);
         this.focalLength = inFile.getAttribute(ExifInterface.TAG_FOCAL_LENGTH);
-        this.gpsAltitude = inFile.getAttribute(ExifInterface.TAG_GPS_ALTITUDE);
-        this.gpsAltitudeRef = inFile.getAttribute(ExifInterface.TAG_GPS_ALTITUDE_REF);
+    //    this.gpsAltitude = inFile.getAttribute(ExifInterface.TAG_GPS_ALTITUDE);
+      //  this.gpsAltitudeRef = inFile.getAttribute(ExifInterface.TAG_GPS_ALTITUDE_REF);
         this.gpsDateStamp = inFile.getAttribute(ExifInterface.TAG_GPS_DATESTAMP);
         this.gpsLatitude = inFile.getAttribute(ExifInterface.TAG_GPS_LATITUDE);
         this.gpsLatitudeRef = inFile.getAttribute(ExifInterface.TAG_GPS_LATITUDE_REF);
@@ -72,7 +72,7 @@ public class ExifHelper {
         this.gpsLongitudeRef = inFile.getAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF);
         this.gpsProcessingMethod = inFile.getAttribute(ExifInterface.TAG_GPS_PROCESSING_METHOD);
         this.gpsTimestamp = inFile.getAttribute(ExifInterface.TAG_GPS_TIMESTAMP);
-        this.iso = inFile.getAttribute(ExifInterface.TAG_ISO);
+        //this.iso = inFile.getAttribute(ExifInterface.TAG_ISO);
         this.make = inFile.getAttribute(ExifInterface.TAG_MAKE);
         this.model = inFile.getAttribute(ExifInterface.TAG_MODEL);
         this.orientation = inFile.getAttribute(ExifInterface.TAG_ORIENTATION);
@@ -91,13 +91,13 @@ public class ExifHelper {
         }
         
         if (this.aperature != null) {
-            this.outFile.setAttribute(ExifInterface.TAG_APERTURE, this.aperature);
+          //  this.outFile.setAttribute(ExifInterface.TAG_APERTURE, this.aperature);
         }
         if (this.datetime != null) {
             this.outFile.setAttribute(ExifInterface.TAG_DATETIME, this.datetime);
         }
         if (this.exposureTime != null) {
-            this.outFile.setAttribute(ExifInterface.TAG_EXPOSURE_TIME, this.exposureTime);
+            //this.outFile.setAttribute(ExifInterface.TAG_EXPOSURE_TIME, this.exposureTime);
         }
         if (this.flash != null) {
             this.outFile.setAttribute(ExifInterface.TAG_FLASH, this.flash);
@@ -106,10 +106,10 @@ public class ExifHelper {
             this.outFile.setAttribute(ExifInterface.TAG_FOCAL_LENGTH, this.focalLength);
         }
         if (this.gpsAltitude != null) {
-            this.outFile.setAttribute(ExifInterface.TAG_GPS_ALTITUDE, this.gpsAltitude);
+            //this.outFile.setAttribute(ExifInterface.TAG_GPS_ALTITUDE, this.gpsAltitude);
         }
         if (this.gpsAltitudeRef != null) {
-            this.outFile.setAttribute(ExifInterface.TAG_GPS_ALTITUDE_REF, this.gpsAltitudeRef);
+         //   this.outFile.setAttribute(ExifInterface.TAG_GPS_ALTITUDE_REF, this.gpsAltitudeRef);
         }
         if (this.gpsDateStamp != null) {
             this.outFile.setAttribute(ExifInterface.TAG_GPS_DATESTAMP, this.gpsDateStamp);
@@ -133,7 +133,7 @@ public class ExifHelper {
             this.outFile.setAttribute(ExifInterface.TAG_GPS_TIMESTAMP, this.gpsTimestamp);
         }
         if (this.iso != null) {
-            this.outFile.setAttribute(ExifInterface.TAG_ISO, this.iso);
+           // this.outFile.setAttribute(ExifInterface.TAG_ISO, this.iso);
         }
         if (this.make != null) {
             this.outFile.setAttribute(ExifInterface.TAG_MAKE, this.make);
